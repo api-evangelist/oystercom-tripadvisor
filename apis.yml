@@ -1,8 +1,23 @@
 aid: oystercom-tripadvisor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oystercom-tripadvisor.png
 name: Oyster.com (TripAdvisor)
-description: 'Oyster.com (TripAdvisor) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: commerce. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Oyster.com is a hotel review and travel-photography website owned by TripAdvisor, known
+  for its in-person "Photo Fakeout" investigations and professionally shot, unedited hotel photos across
+  destinations worldwide. It operates as a consumer-facing WordPress-based review and booking-referral
+  site rather than a developer platform: as of this enrichment pass it publishes no public developer
+  API, developer portal, SDKs, or well-known discovery documents. Surfaced as a portfolio company of
+  bain-capital-ventures and added to the API Evangelist network for enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/oystercom-tripadvisor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Commerce
+- Travel
+- Hotels
+- Reviews
+- Hospitality
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/oystercom-tripadvisor-domain-security.yml
 - type: Website
   url: https://www.oyster.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
